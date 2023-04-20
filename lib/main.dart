@@ -35,7 +35,7 @@ class _MyAppState extends State<MyApp> {
           unselectedItemColor: Colors.black54,
         ),
       ),
-      home: MapPage(),
+      home: LoginPage(),
     );
   }
 }

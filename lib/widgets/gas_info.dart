@@ -1,4 +1,3 @@
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -42,6 +41,7 @@ class GasInfo extends StatelessWidget {
                       'SHELL',
                       style: TextStyle(
                           fontSize: 22,
+                          fontStyle: FontStyle.italic,
                           fontWeight: FontWeight.w700,
                           color: Colors.black),
                     ),

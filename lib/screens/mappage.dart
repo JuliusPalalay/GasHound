@@ -74,8 +74,12 @@ class _MapPageState extends State<MapPage> {
                 );
               },
               child: Container(
-                color: Colors.red[800],
-                height: MediaQuery.of(context).size.height * .2,
+                child: Image.asset(
+                  'shelladvertise.jfif',
+                  width: 400,
+                  height: 200,
+                  fit: BoxFit.cover,
+                ),
               ),
             ),
           ),
