@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:spotifyclone_finals/screens/login.dart';
+import 'package:spotifyclone_finals/screens/mappage.dart';
 import 'package:spotifyclone_finals/screens/search.dart';
 
 void main() {
@@ -20,10 +21,10 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.dark,
       darkTheme: ThemeData(
-        scaffoldBackgroundColor: Colors.white30,
+        scaffoldBackgroundColor: Colors.white,
         brightness: Brightness.dark,
         bottomNavigationBarTheme: BottomNavigationBarThemeData(
-          backgroundColor: Colors.transparent,
+          backgroundColor: Colors.white,
           type: BottomNavigationBarType.fixed,
           selectedLabelStyle: TextStyle(
             fontSize: 12,
@@ -35,7 +36,7 @@ class _MyAppState extends State<MyApp> {
           unselectedItemColor: Colors.black54,
         ),
       ),
-      home: Search(),
+      home: LoginPage(),
     );
   }
 }

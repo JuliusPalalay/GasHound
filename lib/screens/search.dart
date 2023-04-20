@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:spotifyclone_finals/screens/mappage.dart';
 import 'package:spotifyclone_finals/widgets/genre.dart';
 
-class Search extends StatefulWidget {
-  const Search({super.key});
+import '../navi/tabbar.dart';
+
+class MainPage extends StatefulWidget {
+  const MainPage({super.key});
 
   @override
-  State<Search> createState() => _SearchState();
+  State<MainPage> createState() => _MainPageState();
 }
 
-class _SearchState extends State<Search> {
+class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,7 +19,7 @@ class _SearchState extends State<Search> {
         alignment: Alignment.topLeft,
         children: [
           Container(
-            color: Colors.red,
+            color: Colors.red[800],
             height: MediaQuery.of(context).size.height * .2,
           ),
           SingleChildScrollView(
@@ -104,7 +107,16 @@ class _SearchState extends State<Search> {
                     children: [
                       Genre(
                         Color: Colors.grey,
-                        label: 'Pop',
+                        label: 'Katipunan Street Tisa',
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => MapPage(),
+                            ),
+                          );
+                        },
+                        price: '₱85.38',
                       ),
                     ],
                   ),
@@ -117,7 +129,16 @@ class _SearchState extends State<Search> {
                     children: [
                       Genre(
                         Color: Colors.grey,
-                        label: 'Acoustic',
+                        label: 'Natalio B. Bacalso Ave.',
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => MapPage(),
+                            ),
+                          );
+                        },
+                        price: '₱80.56',
                       ),
                     ],
                   ),
@@ -130,7 +151,16 @@ class _SearchState extends State<Search> {
                     children: [
                       Genre(
                         Color: Colors.grey,
-                        label: 'OPM',
+                        label: 'V Rama Ave.',
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => MapPage(),
+                            ),
+                          );
+                        },
+                        price: '₱82.20',
                       ),
                     ],
                   ),
@@ -143,7 +173,16 @@ class _SearchState extends State<Search> {
                     children: [
                       Genre(
                         Color: Colors.grey,
-                        label: 'Pop',
+                        label: 'Natalio B. Bacalso Ave.',
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => MapPage(),
+                            ),
+                          );
+                        },
+                        price: '₱83.80',
                       ),
                     ],
                   ),

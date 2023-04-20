@@ -1,8 +1,8 @@
 // ignore_for_file: prefer_const_constructors
 // ignore_for_file: prefer_const_literals_to_create_immutables
 import 'package:flutter/material.dart';
-import 'package:spotifyclone_finals/screens/home.dart';
 import 'package:spotifyclone_finals/screens/library.dart';
+import 'package:spotifyclone_finals/screens/mappage.dart';
 import 'package:spotifyclone_finals/screens/search.dart';
 
 class Tabbar extends StatefulWidget {
@@ -26,23 +26,23 @@ class _TabbarState extends State<Tabbar> {
         },
         items: [
           BottomNavigationBarItem(
-            icon: Icon(Icons.home_filled),
-            label: "Home",
-          ),
-          BottomNavigationBarItem(
             icon: Icon(Icons.gas_meter_outlined),
             label: "Gas Up",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.directions),
+            label: "Directions",
           ),
         ],
       ),
       body: Stack(children: [
         renderView(
           0,
-          HomePage(),
+          MainPage(),
         ),
         renderView(
           1,
-          Search(),
+          MapPage(),
         ),
       ]),
     );
