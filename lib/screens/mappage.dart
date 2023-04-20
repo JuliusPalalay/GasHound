@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
-
-import '../widgets/genre.dart';
+import 'package:spotifyclone_finals/navi/tabbar.dart';
+import 'package:spotifyclone_finals/widgets/gas_info.dart';
 
 class MapPage extends StatefulWidget {
   const MapPage({super.key});
@@ -18,29 +18,65 @@ class _MapPageState extends State<MapPage> {
       body: Stack(
         alignment: Alignment.topLeft,
         children: [
-          Container(
-            color: Colors.red[800],
-            height: MediaQuery.of(context).size.height * .2,
+          InkWell(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => Navbar(),
+                ),
+              );
+            },
+            child: Container(
+              color: Colors.red[800],
+              height: MediaQuery.of(context).size.height * .2,
+            ),
           ),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 25.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Genre(
+                GasInfo(
                   Color: Colors.grey,
                   label: 'Katipunan Street Tisa',
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => MapPage(),
-                      ),
-                    );
-                  },
                   price: '₱85.38',
                 ),
               ],
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 190.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  color: Colors.black,
+                  child: Image.asset(
+                    'tisa.png',
+                    width: 350,
+                    height: 450,
+                    fit: BoxFit.cover,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(top: 700),
+            child: InkWell(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => Navbar(),
+                  ),
+                );
+              },
+              child: Container(
+                color: Colors.red[800],
+                height: MediaQuery.of(context).size.height * .2,
+              ),
             ),
           ),
         ],

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:spotifyclone_finals/screens/login.dart';
 import 'package:spotifyclone_finals/screens/mappage.dart';
-import 'package:spotifyclone_finals/screens/search.dart';
 
 void main() {
   runApp(MyApp());
@@ -36,7 +35,7 @@ class _MyAppState extends State<MyApp> {
           unselectedItemColor: Colors.black54,
         ),
       ),
-      home: LoginPage(),
+      home: MapPage(),
     );
   }
 }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:spotifyclone_finals/screens/mappage.dart';
-import 'package:spotifyclone_finals/widgets/genre.dart';
+import 'package:spotifyclone_finals/widgets/gas_info.dart';
 
 import '../navi/tabbar.dart';
 
@@ -105,7 +105,7 @@ class _MainPageState extends State<MainPage> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Genre(
+                      GasInfo(
                         Color: Colors.grey,
                         label: 'Katipunan Street Tisa',
                         onTap: () {
@@ -127,7 +127,7 @@ class _MainPageState extends State<MainPage> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Genre(
+                      GasInfo(
                         Color: Colors.grey,
                         label: 'Natalio B. Bacalso Ave.',
                         onTap: () {
@@ -149,7 +149,7 @@ class _MainPageState extends State<MainPage> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Genre(
+                      GasInfo(
                         Color: Colors.grey,
                         label: 'V Rama Ave.',
                         onTap: () {
@@ -171,7 +171,7 @@ class _MainPageState extends State<MainPage> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Genre(
+                      GasInfo(
                         Color: Colors.grey,
                         label: 'Natalio B. Bacalso Ave.',
                         onTap: () {

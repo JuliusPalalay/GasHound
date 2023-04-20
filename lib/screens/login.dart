@@ -12,7 +12,7 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.red,
+      backgroundColor: Colors.red[600],
       body: SafeArea(
         child: Center(
           child: Column(
@@ -31,9 +31,9 @@ class LoginPage extends StatelessWidget {
               const Text(
                 'GasHound',
                 style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 25,
-                ),
+                    color: Colors.black,
+                    fontSize: 25,
+                    fontWeight: FontWeight.w900),
               ),
 
               const SizedBox(height: 20),
@@ -42,9 +42,9 @@ class LoginPage extends StatelessWidget {
               Text(
                 'Sniffing out the cheapest fuel near you',
                 style: TextStyle(
-                  color: Colors.grey[700],
-                  fontSize: 16,
-                ),
+                    color: Colors.white,
+                    fontSize: 16,
+                    fontStyle: FontStyle.italic),
               ),
 
               const SizedBox(height: 25),
@@ -75,7 +75,7 @@ class LoginPage extends StatelessWidget {
                   children: [
                     Text(
                       'Forgot Password?',
-                      style: TextStyle(color: Colors.grey[600]),
+                      style: TextStyle(color: Colors.deepPurple[700]),
                     ),
                   ],
                 ),
@@ -89,7 +89,7 @@ class LoginPage extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => Tabbar(),
+                      builder: (context) => Navbar(),
                     ),
                   );
                 },
@@ -112,7 +112,7 @@ class LoginPage extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(horizontal: 10.0),
                       child: Text(
                         'Or continue with',
-                        style: TextStyle(color: Colors.grey[700]),
+                        style: TextStyle(color: Colors.black),
                       ),
                     ),
                     Expanded(
@@ -149,7 +149,7 @@ class LoginPage extends StatelessWidget {
                 children: [
                   Text(
                     'Not a member?',
-                    style: TextStyle(color: Colors.grey[700]),
+                    style: TextStyle(color: Colors.deepPurple[700]),
                   ),
                   const SizedBox(width: 4),
                   const Text(

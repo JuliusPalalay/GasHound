@@ -1,12 +1,13 @@
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class Genre extends StatelessWidget {
+class GasInfo extends StatelessWidget {
   final Color;
   final String label;
   final String price;
   final Function()? onTap;
-  const Genre(
+  const GasInfo(
       {super.key,
       this.Color,
       required this.label,
@@ -70,8 +71,8 @@ class Genre extends StatelessWidget {
                       price,
                       style: TextStyle(
                         fontSize: 32,
-                        fontWeight: FontWeight.w500,
-                        color: Colors.white70,
+                        fontWeight: FontWeight.w400,
+                        color: Colors.white,
                       ),
                     ),
                   ],

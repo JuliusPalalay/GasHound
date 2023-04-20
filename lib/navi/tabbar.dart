@@ -1,18 +1,17 @@
 // ignore_for_file: prefer_const_constructors
 // ignore_for_file: prefer_const_literals_to_create_immutables
 import 'package:flutter/material.dart';
-import 'package:spotifyclone_finals/screens/library.dart';
 import 'package:spotifyclone_finals/screens/mappage.dart';
-import 'package:spotifyclone_finals/screens/search.dart';
+import 'package:spotifyclone_finals/screens/mainpage.dart';
 
-class Tabbar extends StatefulWidget {
-  const Tabbar({super.key});
+class Navbar extends StatefulWidget {
+  const Navbar({super.key});
 
   @override
-  State<Tabbar> createState() => _TabbarState();
+  State<Navbar> createState() => _NavbarState();
 }
 
-class _TabbarState extends State<Tabbar> {
+class _NavbarState extends State<Navbar> {
   int _selectedTab = 0;
   @override
   Widget build(BuildContext context) {
